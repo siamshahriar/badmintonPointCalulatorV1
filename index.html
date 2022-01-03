@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Score Calculator</title>
+    <link rel="stylesheet" href="bulma/bulma.min.css">
+    
+    
+  
+</head>
+
+<body class="has-background-primary-light">
+    <!-- bulma starts -->
+        
+   <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card ">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://st2.depositphotos.com/4112313/5956/v/600/depositphotos_59562415-stock-illustration-creative-triangle-style-professional-badminton.jpg" alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title is-justify-content-center has-background-primary-light">
+                        Badminton Points Counter
+                      </p>
+                      
+                    </header>
+                    <div class="card-content">
+                      <div class="content has-background-primary-light">
+                        <div class= "box has-text-centered has-background-primary-light">
+                            <form action="/noWhere" class=" " id="formName">
+                                <div class="field is-horizontal">
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <input class="input is-primary mb-3" type="text" name="t1formName" placeholder="TeamOne Name">
+                                        </div>
+                                        <div class="field">
+                                            <input class="input is-primary mb-3" type="text" name="t2formName" placeholder="TeamTwo Name" >
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                     
+                                <Button class="button is-link is-light mt-2">Set</Button>
+                                
+                            </form>
+                            
+                        </div>
+
+                        <section class="has-text-centered pb-4">
+                            <div class="is-inline">
+                                <h1 class="prothomLine is-inline mr-5" id="t1">Team One</h1>
+                                <h1 class="prothomLine is-inline" id="t1Display">0</h1>
+                            </div>
+                            <div>
+                                <h1 class="ditiyoLine is-inline mr-5" id="t2">Team One</h1>
+                                <h1 class="ditiyoLine is-inline" id="t2Display">0</h1>
+                            
+                            </div>
+                        </section>
+                        
+                        <p class="has-text-centered is-size-5">Use the buttons below to update points!</p>
+                        <div class="level-item">
+                            <label for="playTo" class="label is-large is-inline pr-3">GamePoint</label>
+                        <div class="select is-rounded">
+                            <select name="" id="playTo">
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="21">21</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button class="is-primary button card-footer-item" id="t1Button">Team One</button>
+                        <button class="is-info button card-footer-item" id="t2Button">Team Two</button>
+                        <button class="is-danger button card-footer-item" id="reset">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+   </section>
+
+   <section class="footer p-0">
+       <div class="content has-text-centered">
+            <p class="is-family-primary is-size-5 has-text-grey-light">&#169; Siam</p>
+       </div>
+    
+   </section>
+
+    
+    <!-- bulma ends -->
+    
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
