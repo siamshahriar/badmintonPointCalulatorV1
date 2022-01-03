@@ -43,6 +43,8 @@ t1Button.addEventListener('click',function (){
             isGameOver = true;
             t1Display.classList.add('has-text-success');
             t2Display.classList.add('has-text-danger');
+            t1Button.disabled = true;
+            t2Button.disabled = true;
         }
         t1Display.textContent = t1Score;
      }
@@ -57,6 +59,8 @@ t2Button.addEventListener('click',function (){
             isGameOver = true;
             t2Display.classList.add('has-text-success');
             t1Display.classList.add('has-text-danger');
+            t1Button.disabled = true;
+            t2Button.disabled = true;
         }
         t2Display.textContent = t2Score;
      }
@@ -78,6 +82,8 @@ function resetAll(){
     t2Display.textContent = t2Score;
     t1Display.classList.remove('has-text-success','has-text-danger');
     t2Display.classList.remove('has-text-success','has-text-danger');
+    t1Button.disabled = false;
+    t2Button.disabled = false;
 }
 
 
